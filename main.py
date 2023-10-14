@@ -1,5 +1,12 @@
-def display_even_numbers(start,end):
-    for num in range (start,end+1):
-        if num % 2 == 0:
-            print(num)
-            display_even_numbers(5, 15)
+def display_square(side_length,symbol,filled):
+    if filled:
+        for i in range(side_length):
+            print(symbol * side_length)
+        else:
+            print(symbol * side_length)
+            for i in range(side_length -2):
+                print(symbol + ''*(side_length-2)+symbol)
+                print(symbol * side_length)
+
+                display_square(5,'*',False)
+                display_square(5,'*',True)
