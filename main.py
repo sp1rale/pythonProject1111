@@ -1,4 +1,10 @@
-def find_min(a,b,c,d,e):
-    return min(a,b,c,d,e)
-min_value = find_min(3,7,1,9,2)
-print(min_value)
+def calculate_product(start,end):
+    if start>end:
+        start,end = end,start
+
+        product = 1
+        for num in range(start,end+1):
+            product *= num
+            return product
+        result = calculate_product(5,25)
+        print(result)
