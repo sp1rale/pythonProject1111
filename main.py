@@ -1,6 +1,10 @@
-def display_odd_numbers_between(start, end):
-    for number in range(start + 1, end):
-        if number % 2 != 0:
-            print(number)
+def draw_line(length, direction, character):
+    if direction == "горизонтальна":
+        print(character * length)
+    elif direction == "вертикальна":
+        for _ in range(length):
+            print(character)
 
-display_odd_numbers_between(1, 10)
+draw_line(10, "горизонтальна", "-")
+
+draw_line(5, "вертикальна", "|")
