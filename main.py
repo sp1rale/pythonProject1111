@@ -1,6 +1,10 @@
-def find_max_of_four(a, b, c, d):
-    max_value = max(a, b, c, d)
-    return max_value
+def calculate_sum_in_range(start, end):
+    total_sum = 0
+    for number in range(start, end + 1):
+        total_sum += number
+    return total_sum
 
-result = find_max_of_four(10, 5, 20, 15)
-print("Максимальне число: ", result)
+start = 1
+end = 10
+result = calculate_sum_in_range(start, end)
+print(f"Сума чисел в діапазоні від {start} до {end} дорівнює {result}")
